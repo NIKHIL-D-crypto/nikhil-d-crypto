@@ -67,8 +67,10 @@ footer{padding-top:2rem;overflow:hidden}
 @media(prefers-reduced-motion:reduce){.rise{animation:none}html{scroll-behavior:auto}}
 
 .case{padding-block:clamp(2rem,6vw,4rem)}
+.case>*+*{margin-top:1rem}
 .case h1{font-size:clamp(2.5rem,10vw,5rem)}
-.case h2{font-size:clamp(1.4rem,4vw,2rem);margin-top:2.5rem}
-.case .lead,.case .tags,.case .links{margin-top:1rem}
+.case h2{margin-top:3rem;font-size:clamp(1.4rem,4vw,2rem)}
+.case h2+*{margin-top:.75rem}
 .case ul:not(.tags){padding-left:1.2rem;max-width:60ch}
-.case li{margin-block:.4rem}
+.case li+li{margin-top:.5rem}
+.case>.links:last-child{margin-top:3rem}
